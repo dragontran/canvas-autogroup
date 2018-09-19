@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "name": "Dragon Tran",
+        "sortable_name": "Tran, Dragon",
+        "short_name": "Dragon Tran",
+        "sis_user_id": "111111111",
+        "integration_id": null
+    },
+    {
+        "id": 2,
+        "name": "Rafal Jabrzemski",
+        "sortable_name": "Jabrzemski, Rafal",
+        "short_name": "Rafal Jabrzemski",
+        "sis_user_id": "111111111",
+        "integration_id": null
+    }
+]
