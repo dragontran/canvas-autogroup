@@ -1,6 +1,6 @@
 # canvas-autogroup
 
-* Loads all groups through canvas parse_group_info  
+* Loads all groups through canvas api  
 * Filters non-student made groups
 * Parse group ID and name
 * Get students for each group with group ID
@@ -10,10 +10,16 @@
 * it works!!!
 
 
-install requests library through pip
+Install requests library through pip
 ```python
 pip install requests
 ```
+
+Run tests
+```python
+python tests.py
+```
+
 
 Run this script by using:
 ```python
