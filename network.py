@@ -10,7 +10,7 @@ class Network:
     HEADER = {'Authorization' : 'Bearer ' + config.API_KEY }
 
     def get_groups(self):
-        endpoint = 'courses/%s/groups?per_page=35' % self.GROUP_PAGE_ID
+        endpoint = 'courses/%s/groups?per_page=100' % self.GROUP_PAGE_ID
         response = self.get_network_call(endpoint)
         return response
 
