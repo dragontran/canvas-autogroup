@@ -10,10 +10,11 @@ class FormatHelper:
         return json_object
 
     def remove_non_student_groups(self, groups_list):
+        new_groups_list = []
         for group in groups_list:
-            if(group['role'] != "student_organized"):
-                groups_list.remove(group)
-        return groups_list
+            if(group['role'] == "student_organized"):
+                new_groups_list.append(group)
+        return new_groups_list
 
     def parse_group_info(self, groups_list):
         group_info_tuple_list = []
