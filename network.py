@@ -31,6 +31,15 @@ class Network:
         response = self.put_network_call(endpoint, body)
         return response
 
+    def delete_student_made_group(self, group_id):
+        endpoint = 'groups/%s' % group_id
+        response = self.delete_network_call(endpoint)
+        return response
+
+    def delete_network_call(self, endpoint):
+        response = requests.delete(self.API_LINK + endpoint, headers = self.HEADER)
+        return response.json()
+
     def post_network_call(self, endpoint, body):
         response = requests.post(self.API_LINK + endpoint, headers = self.HEADER, data=body)
         return response.json()
