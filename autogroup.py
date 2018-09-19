@@ -17,7 +17,8 @@ def main():
         members_id_list =  helper.parse_group_members(members_json)
         members_list_string =  helper.format_group_member_string(members_id_list)
         new_group_id = network_helper.make_group(group_name)
-        json_test = network_helper.add_members_to_group(members_list_string, new_group_id)
+        network_helper.add_members_to_group(members_list_string, new_group_id)
+        network_helper.delete_student_made_group(group_id)
 
 
 if __name__ == "__main__":
