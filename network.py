@@ -5,12 +5,12 @@ import config
 class Network:
 
     API_LINK = 'https://canvas.ou.edu/api/v1/'
-    GROUP_PAGE_ID = config.GROUP_PAGE_ID
-    GROUP_CATEGORY = config.GROUP_CATEGORY
+    COURSE_ID = config.COURSE_ID
+    GROUP_CATEGORY_ID = config.GROUP_CATEGORY_ID
     HEADER = {'Authorization' : 'Bearer ' + config.API_KEY }
 
     def get_groups(self):
-        endpoint = 'courses/%s/groups?per_page=100' % self.GROUP_PAGE_ID
+        endpoint = 'courses/%s/groups?per_page=100' % self.COURSE_ID
         response = self.get_network_call(endpoint)
         return response
 
@@ -20,7 +20,7 @@ class Network:
         return response
 
     def make_group(self, group_name):
-        endpoint = 'group_categories/%s/groups' % self.GROUP_CATEGORY
+        endpoint = 'group_categories/%s/groups' % self.GROUP_CATEGORY_ID
         body = { 'name': group_name }
         response = self.post_network_call(endpoint, body)
         return response["id"]
