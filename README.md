@@ -3,9 +3,9 @@
 ## Converts student-made groups to group submission compatible groups
 #### Config file instructions
 * Create file called config.py (touch config.py)  
-* Navigate to the People tab in the canvas class page.
+* Navigate to the People tab in the canvas class page.  
 ![test](/img/group_set.PNG)  
-* Click on + Group Set and add new group set.
+* Click on + Group Set and add new group set.  
 ![test2](/img/ids.PNG)  
 * Check the URL bar. Copy the circled values.
 * Add the circled values to config.py. The first/red circle value is COURSE_ID and blue/second circle value is GROUP_CATEGORY_ID.
