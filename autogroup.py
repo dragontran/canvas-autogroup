@@ -5,7 +5,6 @@ from helper import FormatHelper
 def main():
     network_helper = Network()
     helper = FormatHelper()
-    # group_json = helper.open_json_file('./sample_payloads/test_groups.json')
     group_json = network_helper.get_groups()
     filtered_group_json = helper.remove_non_student_groups(group_json)
     group_id_name_list =  helper.parse_group_info(filtered_group_json)
@@ -13,7 +12,6 @@ def main():
     for group in group_id_name_list:
         group_id, group_name  = group[0], group[1]
         members_json = network_helper.get_students_from_group_id(group_id)
-        # members_json =  helper.open_json_file('./sample_payloads/sample_members.json')
         members_id_list =  helper.parse_group_members(members_json)
         members_list_string =  helper.format_group_member_string(members_id_list)
         new_group_id = network_helper.make_group(group_name)
