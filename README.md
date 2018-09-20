@@ -4,13 +4,13 @@
 #### Config file instructions
 * Create file called config.py (touch config.py)  
 * Navigate to the People tab in the canvas class page.
-![test](/img/group_set.png)
+![test](/img/group_set.PNG)
 * Click on + Group Set and add new group set.
-![test2](/img/ids.png)
+![test2](/img/ids.PNG)
 * Check the URL bar. Copy the circled values.
 * Add the circled values to config.py. The first/red circle value is COURSE_ID and blue/second circle value is GROUP_CATEGORY_ID.
 * Please refer to [here](https://community.canvaslms.com/docs/DOC-10806-4214724194) for API_KEY.
-![test3](/img/sample_config_file.png)
+![test3](/img/sample_config_file.PNG)
 * This is an example config.py
 
 #### Setup and run
